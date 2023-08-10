@@ -1,0 +1,85 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Essential for centering in the vertical axis */
+}
+
+header {
+  display: flex; /* Using Flexbox to center content */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #e6f7ff; /* Retaining your light blue background color */
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+h1.display-4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 4rem; /* Adjust size as needed */
+  margin-bottom: 30px; /* Add some space between the name and the subsequent content */
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* For <span> tags */
+span {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700; /* Making it bold for more emphasis */
+}
+
+.row {
+  display: flex;
+  align-items: center; /* This will vertically center the items */
+}
+
+/* Header Styles */
+#profile-pic {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.project {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project-card {
+  border: 2px solid #004080; /* Dark blue border */
+  border-radius: 10px; /* Rounded corners */
+
+  padding: 15px; /* Inner padding */
+  transition: box-shadow 0.3s ease; /* Optional: Smooth hover effect */
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow on hover for interactivity */
+  border-color: black; /* Border color changes to black on hover */
+}
+
+.tech-logo {
+  width: 50px;
+  margin-right: 10px;
+  vertical-align: middle; /* To align with the text */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  #profile-pic {
+    display: none; /* Hide profile picture on mobile devices */
+  }
+}
