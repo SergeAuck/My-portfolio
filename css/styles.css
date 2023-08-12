@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%; /* Essential for centering in the vertical axis */
+  scroll-behavior: smooth;
 }
 
 header {
@@ -39,7 +40,12 @@ span {
 
 .row {
   display: flex;
-  align-items: center; /* This will vertically center the items */
+  align-items: stretch; /* This will vertically center the items */
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styles */
@@ -61,14 +67,36 @@ span {
 .project-card {
   border: 2px solid #004080; /* Dark blue border */
   border-radius: 10px; /* Rounded corners */
-
   padding: 15px; /* Inner padding */
   transition: box-shadow 0.3s ease; /* Optional: Smooth hover effect */
+  position: relative; /* Add this */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow on hover for interactivity */
   border-color: black; /* Border color changes to black on hover */
+}
+
+.project-card a.btn {
+  position: absolute; /* Position the button absolutely */
+  right: 15px; /* Distance from the right edge of the .project-card */
+  bottom: 15px; /* Distance from the bottom edge of the .project-card */
+}
+
+.card-content {
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the logos */
+  align-items: center; /* Vertically center the logos */
+  flex-wrap: wrap; /* Allow the logos to wrap if they don't fit */
+  margin: 10px 0; /* Add some space above and below the logo container */
 }
 
 .tech-logo {

@@ -62,7 +62,7 @@
             tech, I'm your guy. <span>Let's get talking!</span>
           </p>
         </div>
-        <div class="col-md-4 text-md-right text-center align-center">
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
           <!-- Image on the right -->
           <img
             id="profile-pic"
@@ -76,32 +76,93 @@
 
     <section id="projects" class="container mt-5">
       <h2 class="display-5 mb-4">My Projects</h2>
-      <div class="row g-2">
+      <div class="row g-2 d-flex flex-row">
         <!-- Project 1 -->
         <div class="col-md-6">
-          <div class="project-card">
-            <h3 class="h4">Project 1</h3>
-            <img
-              src="images/javascript-logo.png"
-              alt="JavaScript Logo"
-              class="tech-logo"
-            />
-            <!-- Add more logos for other technologies used in Project 1 if necessary -->
-            <p>Description of project 1...</p>
-            <a href="project1-link.html" class="btn btn-primary"
-              >View Project</a
+          <div class="project-card flex-grow-1">
+            <div class="card-content">
+              <h3 class="h4">This Web page!</h3>
+              <div class="logo-container">
+                <img
+                  src="images/html-logo.png"
+                  alt="HTML Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/css-logo.png"
+                  alt="CSS Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/javascript-logo.png"
+                  alt="JavaScript Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/bootstrap-logo.png"
+                  alt="Bootstrap Logo"
+                  class="tech-logo m-3"
+                />
+              </div>
+              <p>
+                Crafted meticulously using the fundamental trinity of web
+                development: <span>HTML, CSS, and JavaScript</span>. I've also
+                integrated <span>Bootstrap</span> to ensure a responsive and
+                modern design.
+              </p>
+              <p>
+                The site serves as a display of my past projects and provides
+                insight into who I am as a developer
+              </p>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary mt-2"
+              onclick="scrollToTop(); return false;"
+              >Back to top!</a
             >
           </div>
         </div>
 
         <!-- Project 2 -->
         <div class="col-md-6">
-          <div class="project-card">
-            <h3 class="h4">Project 2</h3>
-            <img src="images/css-logo.png" alt="CSS Logo" class="tech-logo" />
-            <!-- Add more logos for other technologies used in Project 2 if necessary -->
-            <p>Description of project 2...</p>
-            <a href="project2-link.html" class="btn btn-primary"
+          <div class="project-card flex-grow-1">
+            <div class="card-content">
+              <h3 class="h4">This Web page!</h3>
+              <div class="logo-container">
+                <img
+                  src="images/html-logo.png"
+                  alt="HTML Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/css-logo.png"
+                  alt="CSS Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/javascript-logo.png"
+                  alt="JavaScript Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/bootstrap-logo.png"
+                  alt="Bootstrap Logo"
+                  class="tech-logo m-3"
+                />
+              </div>
+              <p>
+                Crafted meticulously using the fundamental trinity of web
+                development: <span>HTML, CSS, and JavaScript</span>. I've also
+                integrated <span>Bootstrap</span> to ensure a responsive and
+                modern design.
+              </p>
+              <p>
+                The site serves as a display of my past projects and provides
+                insight into who I am as a developer
+              </p>
+            </div>
+            <a href="project1-link.html" class="btn btn-primary mt-2"
               >View Project</a
             >
           </div>
@@ -109,7 +170,7 @@
 
         <!-- Project 3 -->
         <div class="col-md-6">
-          <div class="project-card">
+          <div class="project-card flex-grow-1">
             <h3 class="h4">Project 3</h3>
             <img src="images/html-logo.png" alt="HTML Logo" class="tech-logo" />
             <!-- Add more logos for other technologies used in Project 3 if necessary -->
@@ -122,7 +183,7 @@
 
         <!-- Project 4 -->
         <div class="col-md-6">
-          <div class="project-card">
+          <div class="project-card flex-grow-1">
             <h3 class="h4">Project 4</h3>
             <img
               src="images/bootstrap-logo.png"
@@ -145,5 +206,26 @@
         <a href="mailto:your.email@example.com">your.email@example.com</a>
       </p>
     </footer>
+    <!-- Smooth scrolling -->
+    <script>
+      function scrollToTop() {
+        // Calculate scroll position per frame for smoothness
+        const scrollDuration = 500;
+        const frameRate = 60;
+        const frames = scrollDuration / (1000 / frameRate);
+        const scrollPerFrame = window.scrollY / frames;
+
+        let currentFrame = 0;
+        const scrollToTopInterval = setInterval(() => {
+          window.scrollBy(0, -scrollPerFrame);
+          currentFrame++;
+
+          if (currentFrame >= frames) {
+            clearInterval(scrollToTopInterval);
+            window.scrollTo(0, 0);
+          }
+        }, 1000 / frameRate);
+      }
+    </script>
   </body>
 </html>
