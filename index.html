@@ -7,6 +7,7 @@
       name="description"
       content="Brief description about Serge Kovalchuk and his portfolio."
     />
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,13 +16,19 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- favicon -->
     <link rel="icon" href="images/portfolio-favicon.png" type="image/x-icon" />
-    <title>Serge Kovalchuk - Portfolio</title>
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- arrow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
+    <title>Serge Kovalchuk - Portfolio</title>
+    
   </head>
 
   <body class="bg-light">
@@ -128,43 +135,42 @@
         <div class="col-md-6">
           <div class="project-card flex-grow-1">
             <div class="card-content">
-              <h3 class="h4">This Web page!</h3>
+              <h3 class="h4">E-shop: Boxed-Bliss</h3>
               <div class="logo-container">
                 <img
-                  src="images/html-logo.png"
+                  src="images/javascript-logo.png"
                   alt="HTML Logo"
                   class="tech-logo m-3"
                 />
                 <img
-                  src="images/css-logo.png"
+                  src="images/react-logo.png"
                   alt="CSS Logo"
                   class="tech-logo m-3"
                 />
                 <img
-                  src="images/javascript-logo.png"
+                  src="images/nodejs-logo.png"
                   alt="JavaScript Logo"
                   class="tech-logo m-3"
                 />
                 <img
-                  src="images/bootstrap-logo.png"
+                  src="images/css-logo.png"
                   alt="Bootstrap Logo"
                   class="tech-logo m-3"
                 />
               </div>
               <p>
-                Crafted meticulously using the fundamental trinity of web
-                development: <span>HTML, CSS, and JavaScript</span>. I've also
-                integrated <span>Bootstrap</span> to ensure a responsive and
-                modern design.
+                 "Boxed-Bliss" is a sample e-shop platform for board game enthusiasts. Designed with a modern <span>React</span>-driven front-end,
+                  this project efficiently showcases a dynamic user experience.
               </p>
               <p>
-                The site serves as a display of my past projects and provides
-                insight into who I am as a developer
+                The robust <span>Node.js</span> backend not only supports user preferences through a simple login system 
+                but also efficiently manages various tasks through custom-built APIs. 
               </p>
+              <p> A significant aspect of the platform is its integration with a payment gateway, demonstrating a capability for
+                 seamless checkouts. As a sample project, "Boxed-Bliss" is an epitome of a feature-rich e-commerce platform, drawing
+                  strength from leading-edge technologies and an innate drive for excellence.</p>
             </div>
-            <a href="project1-link.html" class="btn btn-primary mt-2"
-              >View Project</a
-            >
+            <a href="https://boxed-bliss.netlify.app/" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
 
@@ -206,6 +212,9 @@
         <a href="mailto:your.email@example.com">your.email@example.com</a>
       </p>
     </footer>
+    <button id="backToTop" class="btn btn-primary" onclick="scrollToTop();"><i class="fas fa-arrow-up"></i></button>
+      Back to Top
+    </button>
     <!-- Smooth scrolling -->
     <script>
       function scrollToTop() {
@@ -226,6 +235,14 @@
           }
         }, 1000 / frameRate);
       }
+      window.addEventListener("scroll", function () {
+        // Show the button if you've scrolled more than 300px
+        if (window.scrollY > 300) {
+          document.getElementById("backToTop").style.display = "block";
+        } else {
+          document.getElementById("backToTop").style.display = "none";
+        }
+      });
     </script>
   </body>
 </html>

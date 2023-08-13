@@ -76,8 +76,8 @@ span {
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow on hover for interactivity */
-  border-color: black; /* Border color changes to black on hover */
+  box-shadow: 0 4px 8px rgba(221, 166, 14, 0.1); /* Slight shadow on hover for interactivity */
+  border-color: rgb(196, 147, 13); /* Border color changes to black on hover */
 }
 
 .project-card a.btn {
@@ -103,6 +103,21 @@ span {
   width: 50px;
   margin-right: 10px;
   vertical-align: middle; /* To align with the text */
+}
+
+#backToTop {
+  background-color: #f3cd25; /* You can change this to your desired color */
+  border-radius: 50px; /* Makes it rounded */
+  position: fixed; /* Positions it relative to the viewport */
+  bottom: 20px; /* 20px from the bottom of the viewport */
+  right: 20px; /* 20px from the right side of the viewport */
+  display: none; /* Hidden by default and shown with JavaScript when scrolled */
+  z-index: 1000; /* Ensures the button stays on top of other elements */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+#backToTop:hover {
+  background-color: #dd8e17; /* Darkens the blue a bit on hover */
 }
 
 /* Mobile Styles */
