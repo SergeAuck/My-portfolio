@@ -12,7 +12,10 @@ header {
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  background-color: #e6f7ff; /* Retaining your light blue background color */
+}
+
+footer {
+  padding-bottom: 100px; /* or whatever value you desire */
 }
 
 h1,
@@ -50,7 +53,7 @@ span {
 
 /* Header Styles */
 #profile-pic {
-  width: 150px;
+  width: 200px;
   margin-bottom: 20px;
 }
 
@@ -91,6 +94,26 @@ span {
   margin-bottom: 30px;
 }
 
+.info-card {
+  border: 2px solid #004080; /* Dark blue border from .project-card */
+  border-radius: 10px; /* Rounded corners from .project-card */
+  padding: 15px; /* Inner padding from .project-card */
+  transition: box-shadow 0.3s ease; /* Optional: Smooth hover effect from .project-card */
+  display: flex; /* To help structure the content inside */
+  flex-direction: row; /* Rows of content */
+  justify-content: space-between; /* Space out direct child elements (should be .col-md-8 and .col-md-4) */
+  background-color: #e6f7ff; /* Retaining your light blue background color */
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 8px rgba(221, 166, 14, 0.1); /* Slight shadow on hover from .project-card */
+  border-color: rgb(
+    196,
+    147,
+    13
+  ); /* Border color changes on hover from .project-card */
+}
+
 .logo-container {
   display: flex;
   justify-content: center; /* Horizontally center the logos */
@@ -120,6 +143,51 @@ span {
   background-color: #dd8e17; /* Darkens the blue a bit on hover */
 }
 
+/* Footer styles */
+.info-container {
+  background-color: #e6f7ff; /* Retaining your light blue background color */
+  border: 2px solid #004080; /* Dark blue border similar to project cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  margin-bottom: 20px; /* Space between this section and whatever follows */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Horizontally center the logos */
+  gap: 20px; /* Space between logos */
+  margin-top: 20px; /* Space above the logo section */
+}
+
+.social-icon {
+  width: 50px; /* Or adjust to your preference */
+  border-radius: 50%; /* Makes them round */
+}
+
+footer a {
+  color: #007bff; /* Default Bootstrap link color, change if necessary */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+footer a:hover {
+  color: #0056b3; /* Darken the link color slightly on hover */
+}
+
+.email-icon-container {
+  text-align: center; /* Center the icon horizontally */
+  margin-top: 20px; /* Provide some space above the icon */
+}
+
+.email-icon {
+  font-size: 2rem; /* Adjust the size of the icon */
+  color: #004080; /* Icon color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  cursor: pointer; /* Cursor changes to a hand on hover */
+}
+
+.email-icon:hover {
+  color: #0056b3; /* Slightly lighter blue on hover */
+}
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   #profile-pic {

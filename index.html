@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- favicon -->
     <link rel="icon" href="images/portfolio-favicon.png" type="image/x-icon" />
     <!-- bootstrap -->
@@ -24,20 +28,22 @@
       rel="stylesheet"
     />
     <!-- arrow -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Serge Kovalchuk - Portfolio</title>
-    
   </head>
 
   <body class="bg-light">
-    <header class="container py-5">
+    <header class="container py-5 px-4">
       <div class="name-container">
         <h1 class="display-4">Serge Kovalchuk</h1>
       </div>
 
-      <div class="row">
+      <div class="row info-card">
         <div class="col-md-8">
           <!-- Information on the left -->
 
@@ -81,7 +87,7 @@
       </div>
     </header>
 
-    <section id="projects" class="container mt-5">
+    <section id="projects" class="container mt-2">
       <h2 class="display-5 mb-4">My Projects</h2>
       <div class="row g-2 d-flex flex-row">
         <!-- Project 1 -->
@@ -139,81 +145,146 @@
               <div class="logo-container">
                 <img
                   src="images/javascript-logo.png"
-                  alt="HTML Logo"
+                  alt="javascript Logo"
                   class="tech-logo m-3"
                 />
                 <img
                   src="images/react-logo.png"
-                  alt="CSS Logo"
+                  alt="react Logo"
                   class="tech-logo m-3"
                 />
                 <img
                   src="images/nodejs-logo.png"
-                  alt="JavaScript Logo"
+                  alt="nodejs-logo Logo"
                   class="tech-logo m-3"
                 />
                 <img
                   src="images/css-logo.png"
-                  alt="Bootstrap Logo"
+                  alt="css Logo"
                   class="tech-logo m-3"
                 />
               </div>
               <p>
-                 "Boxed-Bliss" is a sample e-shop platform for board game enthusiasts. Designed with a modern <span>React</span>-driven front-end,
-                  this project efficiently showcases a dynamic user experience.
+                "Boxed-Bliss" is a sample e-shop platform for board game
+                enthusiasts. Designed with a modern <span>React</span>-driven
+                front-end, this project efficiently showcases a dynamic user
+                experience.
               </p>
               <p>
-                The robust <span>Node.js</span> backend not only supports user preferences through a simple login system 
-                but also efficiently manages various tasks through custom-built APIs. 
+                The robust <span>Node.js</span> backend not only supports user
+                preferences through a simple login system but also efficiently
+                manages various tasks through custom-built APIs.
               </p>
-              <p> A significant aspect of the platform is its integration with a payment gateway, demonstrating a capability for
-                 seamless checkouts. As a sample project, "Boxed-Bliss" is an epitome of a feature-rich e-commerce platform, drawing
-                  strength from leading-edge technologies and an innate drive for excellence.</p>
+              <p>
+                A significant aspect of the platform is its integration with a
+                payment gateway, demonstrating a capability for seamless
+                checkouts. As a sample project, "Boxed-Bliss" is an epitome of a
+                feature-rich e-commerce platform, drawing strength from
+                leading-edge technologies and an innate drive for excellence.
+              </p>
             </div>
-            <a href="https://boxed-bliss.netlify.app/" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a
+              href="https://boxed-bliss.netlify.app/"
+              class="btn btn-primary mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
           </div>
         </div>
 
         <!-- Project 3 -->
         <div class="col-md-6">
           <div class="project-card flex-grow-1">
-            <h3 class="h4">Project 3</h3>
-            <img src="images/html-logo.png" alt="HTML Logo" class="tech-logo" />
-            <!-- Add more logos for other technologies used in Project 3 if necessary -->
-            <p>Description of project 3...</p>
-            <a href="project3-link.html" class="btn btn-primary"
+            <div class="card-content">
+              <h3 class="h4">API: GitHub Stats Visualizer</h3>
+              <div class="logo-container">
+                <img
+                  src="images/javascript-logo.png"
+                  alt="LavaScript Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/react-logo.png"
+                  alt="react Logo"
+                  class="tech-logo m-3"
+                />
+                <img
+                  src="images/css-logo.png"
+                  alt="CSS Logo"
+                  class="tech-logo m-3"
+                />
+              </div>
+              <p>
+                A sleek web tool designed to turn GitHub user data into visually
+                appealing charts. Built with the power of <span>React</span>, it
+                offers both utility and style.
+              </p>
+              <p>
+                Tapping into the GitHub API, the application presents diverse
+                user statistics through various interactive chart formats, all
+                seamlessly rendered using <span>JavaScript</span> and
+                <span>CSS</span>.
+              </p>
+              <p>
+                As a bridge between raw data and visual insights, the Visualizer
+                provides an immersive peek into any GitHub user's coding
+                narrative, making data interpretation both intuitive and
+                captivating.
+              </p>
+            </div>
+            <a
+              href="https://git-search-serge.netlify.app/"
+              class="btn btn-primary mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
               >View Project</a
             >
           </div>
         </div>
 
         <!-- Project 4 -->
-        <div class="col-md-6">
-          <div class="project-card flex-grow-1">
-            <h3 class="h4">Project 4</h3>
-            <img
-              src="images/bootstrap-logo.png"
-              alt="Bootstrap Logo"
-              class="tech-logo"
-            />
-            <!-- Add more logos for other technologies used in Project 4 if necessary -->
-            <p>Description of project 4...</p>
-            <a href="project4-link.html" class="btn btn-primary"
-              >View Project</a
-            >
-          </div>
-        </div>
       </div>
     </section>
 
-    <footer class="container text-center py-4">
-      <p>
-        Connect with me:
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-      </p>
+    <footer class="container mt-2">
+      <h2 class="display-5 mb-4 mt-5">My Contact Details</h2>
+      <div class="text-center info-container">
+        <p>Interested in connecting? My inbox is always open.</p>
+        <div class="email-icon-container">
+          <a href="mailto:sergey.auckland@gmail.com" title="Contact Me">
+            <i class="fas fa-envelope email-icon"></i>
+          </a>
+        </div>
+        <p class="mt-3">Or connect via one of the social media:</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/sergeykovalchuknz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/linkedin-logo.png"
+              alt="LinkedIn Logo"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://github.com/SergeAuck"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/github-logo.png"
+              alt="GitHub Logo"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
-    <button id="backToTop" class="btn btn-primary" onclick="scrollToTop();"><i class="fas fa-arrow-up"></i></button>
-      Back to Top
+    <button id="backToTop" class="btn btn-primary" onclick="scrollToTop();">
+      <i class="fas fa-arrow-up"></i>
     </button>
     <!-- Smooth scrolling -->
     <script>
